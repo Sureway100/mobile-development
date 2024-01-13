@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/navigation/nav_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/educationFragment">
+
+<!--    education-->
+    <fragment
+        android:id="@+id/educationFragment"
+        android:name="com.example.didyouknowapp.EducationFragment"
+        android:label="EDUCATION"
+        tools:layout="@layout/fragment_education">
+        <action
+            android:id="@+id/action_homeFragment_to_firstPageFragmentt"
+            app:destination="@id/educationFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/educationFragment1"
+        android:name="com.example.didyouknowapp.education.FirstEducation"
+        android:label="EDUCATION"
+        tools:layout="@layout/fragment_first_education" />
+
+    <fragment
+        android:id="@+id/educationFragment2"
+        android:name="com.example.didyouknowapp.education.SecondEducation"
+        android:label="EDUCATION"
+        tools:layout="@layout/fragment_second_education" />
+
+    <fragment
+        android:id="@+id/educationFragment3"
+        android:name="com.example.didyouknowapp.education.SecondEducation"
+        android:label="EDUCATION"
+        tools:layout="@layout/fragment_third_education" />
+
+    <fragment
+        android:id="@+id/educationFragment4"
+        android:name="com.example.didyouknowapp.education.SecondEducation"
+        android:label="EDUCATION"
+        tools:layout="@layout/fragment_fourth_education" />
+
+
+    <!--    money-->
+    <fragment
+        android:id="@+id/moneyFragment"
+        android:name="com.example.didyouknowapp.MoneyFragment"
+        android:label="MONEY"
+        tools:layout="@layout/fragment_money">
+    <action
+        android:id="@+id/action_homeFragment_to_firstPageFragment"
+        app:destination="@id/moneyFirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstPageFragment"
+        android:name="com.example.didyouknowapp.money.FirstMoney"
+        android:label="MONEY"
+        tools:layout="@layout/fragment_first_money" />
+
+    <fragment
+        android:id="@+id/secondPageFragment"
+        android:name="com.example.didyouknowapp.money.SecondMoney"
+        android:label="MONEY"
+        tools:layout="@layout/fragment_second_money" />
+
+
+    <!--    politics-->
+    <fragment
+        android:id="@+id/schoolFragment"
+        android:name="com.example.didyouknowapp.PoliticsFragment"
+        android:label="POLITICS"
+        tools:layout="@layout/fragment_politics" />
+
+
+
+</navigation>
